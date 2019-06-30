@@ -44,39 +44,42 @@ export class Form extends React.Component {
             errors: currErrors
         });
 
+        if (!currErrors.length) {
+            // handle form sending
+        }
+
     }
 
     handleBtnClick = e => {
         e.preventDefault();
         this.handleValidation();
-        console.log(' click!');
     }
 
   render() {
     return (
         <React.Fragment>
-            <div id="page-wrapper">
-                <FormHeader text="Kontaktforma" />
+            <div id='page-wrapper'>
+                <FormHeader text='Kontaktforma' />
                 <FormError errorArray={this.state.errors} />
                 <form>
                     <FormRow>
-                        <FormLabel text="Vārds, Uzvārds" required />
-                        <FormInput type="text" inputField="input" name="full-name" onInput={this.handleInput} />
+                        <FormLabel text='Vārds, Uzvārds' required />
+                        <FormInput type='text' inputField='input' name='full-name' onInput={this.handleInput} />
                     </FormRow>
                     <FormRow>
-                        <FormLabel text="Telefons numurs" required />
-                        <FormInput type="text" inputField="input" name="phone-num" onInput={this.handleInput} />
+                        <FormLabel text='Telefons numurs' required />
+                        <FormInput type='text' inputField='input' name='phone-num' onInput={this.handleInput} />
                     </FormRow>
                     <FormRow>
-                        <FormLabel text="Adrese" />
-                        <FormInput type="text" inputField="input" name="address" onInput={this.handleInput}/>
+                        <FormLabel text='Adrese' />
+                        <FormInput type='text' inputField='input' name='address' onInput={this.handleInput}/>
                     </FormRow>
                     <FormRow>
-                        <FormLabel text="Ziņojums" required />
-                        <FormInput inputField="textarea" name="message" onInput={this.handleInput}/>
+                        <FormLabel text='Ziņojums' required />
+                        <FormInput inputField='textarea' name='message' onInput={this.handleInput}/>
                     </FormRow>
                     <FormRow>
-                        <FormButton text="Sūtīt &rarr;" onBtnClick={this.handleBtnClick} /> 
+                        <FormButton text='Sūtīt &rarr;' onBtnClick={this.handleBtnClick} /> 
                     </FormRow>
                 </form>
             </div>

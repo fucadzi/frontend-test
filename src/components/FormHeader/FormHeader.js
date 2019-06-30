@@ -5,7 +5,7 @@ import './FormHeader.scss';
 const FormHeader = ({ text }) => {
     
     return (
-        <h1 className="heading">{ text }</h1>
+        <h1 className='heading'>{ text }</h1>
     );
 }
 

@@ -1,0 +1,11 @@
+.error {
+    &.active {
+        color: rgb(235, 130, 130);
+        border: 1px solid #777777;
+        padding: 3px;
+    }
+
+    p {
+        margin: 0;
+    }
+}

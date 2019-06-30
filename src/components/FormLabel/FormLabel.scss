@@ -1,4 +1,9 @@
-.label {
+.label { 
+    display: block;  
+    float: left;
+    width: 150px;
+    font-family: Lucida Sans Unicode;
+    
     .asterisk {
         color: #F35151;
     }

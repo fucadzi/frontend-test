@@ -9,10 +9,10 @@ const FormInput = ({ inputField, type, name, onInput }) => {
             {
                 inputField==='textarea' ?
                 (
-                    <textarea name={name} onChange={e => onInput(name, e.target.value)} />
+                    <textarea className='textarea' name={name} onChange={e => onInput(name, e.target.value)} />
                 ) : 
                 (
-                    <input type={type} name={name} onChange={e => onInput(name, e.target.value)} />
+                    <input className='input' type={type} name={name} onChange={e => onInput(name, e.target.value)} />
                 )
             }
         </React.Fragment>

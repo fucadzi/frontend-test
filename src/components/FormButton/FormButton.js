@@ -5,7 +5,7 @@ import './FormButton.scss';
 const FormButton = ({ text, onBtnClick }) => {
     
     return (
-        <button className="large" onClick={onBtnClick}>{ text }</button>
+        <button className='largeBtn' onClick={onBtnClick}>{ text }</button>
     );
 }
 

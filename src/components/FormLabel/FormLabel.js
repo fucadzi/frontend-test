@@ -5,8 +5,8 @@ import './FormLabel.scss';
 const FormLabel = ({ text, required }) => {
     
     return (
-        <label className="label">
-            { text }: {required && (<span className="asterisk">*</span>)}
+        <label className='label'>
+            { text }: {required && (<span className='asterisk'>*</span>)}
         </label>
     );
 }
